@@ -1,7 +1,10 @@
 /*Script for the virtuel Garage in your Mission*/
 
-/*Place on the Marker a Land_HelipadEmpty_F */
-/*Place a Marker and name it. In the following script the name is MARKERNAME  */
+/*1.Place a Marker
+2.Place on the Marker a Land_HelipadEmpty_F */
+/*
+copy the addAction in a initfield of your soldgier or something
+In the following script the name is MARKERNAME */
 this addaction ["<t color='#FFFF00'>Garage</t>", {[("MARKERNAME")] call Blub_fnc_garage;}];
 
 /*Garage Function*/
@@ -62,5 +65,5 @@ Blub_fnc_garage = {
   			           _count = _count + 1;
   		         } forEach _textures;
   	   } forEach _veh_list;
-  };  
+  };
 };
